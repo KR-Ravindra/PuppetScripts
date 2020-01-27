@@ -48,6 +48,8 @@ writeHosts
 CertificationSign() {
     sudo systemctl restart puppet-master.service puppet.service
     sudo puppet cert list
+    sudo systemctl restart puppet-master.service puppetmaster.service
+    sudo systemctl start puppet-master.service puppetmaster.service puppet.service
     sudo puppet cert sign --all
 }
 CertificationSign
