@@ -40,7 +40,7 @@ Add master machine IP adress when prompted.
 ### Now open the master machine and run the following:
 
 ```
-https://github.com/KR-Ravindra/PuppetScripts.git
+git clone https://github.com/KR-Ravindra/PuppetScripts.git
 cd PuppetScripts
 chmod +x master.sh
 sudo ./master.sh
