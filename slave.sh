@@ -48,5 +48,7 @@ sleep 1s
 echo "
 
 "
+sudo systemctl start puppet.service
+sudo systemctl enable puppet.service
 echo "Support by starring this repo at https://github.com/KR-Ravindra/PuppetScripts.git" | boxes
 
