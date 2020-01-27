@@ -5,7 +5,7 @@ Initialiser()
     clear
         sudo apt-get update
     clear
-        echo "Installing requested packages" | pv -qL 10
+        echo "Installing requested packages" 
     sleep 1s
         sudo apt-get install $packages -y
     clear
@@ -47,6 +47,7 @@ writeHosts
 
 CertificationSign() {
     sudo systemctl restart puppet-master.service puppet.service
+    sudo puppet cert list
     sudo puppet cert sign --all
 }
 CertificationSign
