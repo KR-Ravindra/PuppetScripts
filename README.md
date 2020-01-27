@@ -3,30 +3,20 @@
 ## Make sure you follow the sequence listed below:
 
 1. Login to your AWS console and Search for EC2
-
+<kbd>
     ![AWS console](images/Puppet1.png)
-
+</kbd>
 2. Click on Instances -> Launch Instance -> Ubuntu Server -> Select number of machines (master + slave included)
-
-    ![Creating Instance](images/Puppet2.png)
-
-
-    ![Creating Instance](images/Puppet3.png)
-
-
-    ![Creating Instance](images/Puppet4.png)
-
-
-    ![Creating Instance](images/Puppet5.png)
-
-
+<kbd>
+![Creating Instance](images/Puppet2.png)</kbd>
+<kbd>![Creating Instance](images/Puppet3.png)</kbd>
+<kbd>![Creating Instance](images/Puppet4.png)</kbd>
+<kbd>![Creating Instance](images/Puppet5.png)</kbd>
 3. On 6th Step of spinning ubuntu instances,
      add two security groups "All Traffic & All TCP" and set their constraint to "ANYWHERE".
 
-    ![Creating Instance](images/Puppet6.png)
-
-
-    ![Creating Instance](images/Puppet7.png)
+<kbd>![Creating Instance](images/Puppet6.png)</kbd>
+<kbd>![Creating Instance](images/Puppet7.png)</kbd>
 
 4. Finish, Launch and Procced.
 
@@ -38,8 +28,8 @@ chmod +x slave.sh
 sudo ./slave.sh
 
 ```
-![SSH SLAVE](images/Puppet9.png)
-Ad master machine IP adress when prompted.
+<kbd>![SSH SLAVE](images/Puppet9.png)</kbd>
+Add master machine IP adress when prompted.
 
 ### Now open the master machine and run the following:
 
@@ -51,9 +41,9 @@ sudo ./master.sh
 
 ```
 
-![SSH MASTER](images/Puppet10.png)
+<kbd>![SSH MASTER](images/Puppet10.png)</kbd>
 
-![SSH MASTER](images/Puppet11.png)
+<kbd>![SSH MASTER](images/Puppet11.png)</kbd>
 
 Add Slave machines when prompted
 
@@ -62,9 +52,9 @@ Add Slave machines when prompted
 ```
 sudo puppet agent --test
 ```
-![SSH SLAVE](images/Puppet12.png)
+<kbd>![SSH SLAVE](images/Puppet12.png)</kbd>
 
 Copy the slave machine IP address and check the nginx server deployed. (If default manifesto is used).
-![TEST](images/Puppet13.png)
+<kbd>![TEST](images/Puppet13.png)</kbd>
 
 ## You will be successfully working with puppet. Reward me a star :shipit:
