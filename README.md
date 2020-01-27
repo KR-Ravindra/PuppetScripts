@@ -4,9 +4,7 @@
 
 1. Login to your AWS console and Search for EC2
 
-<kbd>
-    ![AWS console](images/Puppet1.png)
-</kbd>
+<kbd>![AWS console](images/Puppet1.png)</kbd>
 
 2. Click on Instances -> Launch Instance -> Ubuntu Server -> Select number of machines (master + slave included)
 
