@@ -51,6 +51,9 @@ CertificationSign() {
     sudo systemctl restart puppet-master.service puppetmaster.service
     sudo systemctl start puppet-master.service puppetmaster.service puppet.service
     sudo puppet cert sign --all
+    sleep 3s
+    sudo puppet cert list
+    sudo puppet cert sign --all
 }
 CertificationSign
 
